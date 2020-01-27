@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/UI.unity
     guid: a6559ecaa31a949d4a5ee367ff331e38
+  - enabled: 1
+    path: Assets/Scenes/ScrollUI.unity
+    guid: 13a0dc7ad7bbac649adcb2af069686b2
   m_configObjects: {}

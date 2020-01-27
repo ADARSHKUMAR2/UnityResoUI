@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 66079882}
   - component: {fileID: 66079881}
   m_Layer: 5
-  m_Name: Flighticon
+  m_Name: img-Flight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -225,7 +225,7 @@ RectTransform:
   m_Children:
   - {fileID: 1438539245}
   m_Father: {fileID: 688803445}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 272070895}
   - component: {fileID: 272070894}
   m_Layer: 5
-  m_Name: IMG/ProfileIcon
+  m_Name: IMG-ProfileIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -778,9 +778,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1943069912}
   - {fileID: 1120931409}
-  - {fileID: 688803445}
-  - {fileID: 1907967858}
   m_Father: {fileID: 1912448714}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -938,7 +937,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5/100
+  m_Text: 50k/10k
 --- !u!222 &531872196
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -960,7 +959,7 @@ GameObject:
   - component: {fileID: 543369313}
   - component: {fileID: 543369315}
   m_Layer: 5
-  m_Name: ReportBtn
+  m_Name: btn-Report
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1158,7 +1157,7 @@ GameObject:
   - component: {fileID: 589261895}
   - component: {fileID: 589261894}
   m_Layer: 5
-  m_Name: Fuelicon
+  m_Name: img-Fuel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1177,7 +1176,7 @@ RectTransform:
   m_Children:
   - {fileID: 815943403}
   m_Father: {fileID: 688803445}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1268,7 +1267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 688803445}
   m_Layer: 5
-  m_Name: Resources
+  m_Name: ResourcesPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1281,23 +1280,22 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688803444}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.99764705, y: 0.99764705, z: 0.99764705}
   m_Children:
-  - {fileID: 1943069912}
   - {fileID: 1857321884}
   - {fileID: 66079880}
   - {fileID: 589261893}
   - {fileID: 1182757886}
   - {fileID: 1200309991}
   - {fileID: 968810617}
-  m_Father: {fileID: 405890500}
-  m_RootOrder: 1
+  m_Father: {fileID: 1943069912}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.4838442, y: -785.25793}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &705318266
@@ -1313,7 +1311,7 @@ GameObject:
   - component: {fileID: 705318268}
   - component: {fileID: 705318270}
   m_Layer: 5
-  m_Name: HomeBtn
+  m_Name: btn-Home
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1751,7 +1749,7 @@ GameObject:
   - component: {fileID: 968810619}
   - component: {fileID: 968810618}
   m_Layer: 5
-  m_Name: Coinicon
+  m_Name: img-Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1770,7 +1768,7 @@ RectTransform:
   m_Children:
   - {fileID: 290304146}
   m_Father: {fileID: 688803445}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1827,7 +1825,7 @@ GameObject:
   - component: {fileID: 980207379}
   - component: {fileID: 980207381}
   m_Layer: 5
-  m_Name: MissionBtn
+  m_Name: btn-Mission
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1946,7 +1944,7 @@ GameObject:
   - component: {fileID: 1052726396}
   - component: {fileID: 1052726395}
   m_Layer: 5
-  m_Name: TXT/Level
+  m_Name: TXT-Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2025,7 +2023,7 @@ GameObject:
   - component: {fileID: 1120931411}
   - component: {fileID: 1120931410}
   m_Layer: 5
-  m_Name: IMG/BroadcastMessagePanel
+  m_Name: BroadcastMessagePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2045,7 +2043,7 @@ RectTransform:
   - {fileID: 1704943485}
   - {fileID: 314248882}
   m_Father: {fileID: 405890500}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -2101,7 +2099,7 @@ GameObject:
   - component: {fileID: 1149933202}
   - component: {fileID: 1149933201}
   m_Layer: 5
-  m_Name: IMG/LevelPanel
+  m_Name: IMG-LevelPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2176,7 +2174,7 @@ GameObject:
   - component: {fileID: 1182757888}
   - component: {fileID: 1182757887}
   m_Layer: 5
-  m_Name: Powericon
+  m_Name: img-Power
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2195,7 +2193,7 @@ RectTransform:
   m_Children:
   - {fileID: 339599059}
   m_Father: {fileID: 688803445}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -2251,7 +2249,7 @@ GameObject:
   - component: {fileID: 1200309993}
   - component: {fileID: 1200309992}
   m_Layer: 5
-  m_Name: Goldicon
+  m_Name: img-Gold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2270,7 +2268,7 @@ RectTransform:
   m_Children:
   - {fileID: 568924795}
   m_Father: {fileID: 688803445}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -2405,7 +2403,7 @@ GameObject:
   - component: {fileID: 1373877463}
   - component: {fileID: 1373877462}
   m_Layer: 5
-  m_Name: TXT/name (1)
+  m_Name: TXT-DummyName_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2485,7 +2483,7 @@ GameObject:
   - component: {fileID: 1403194005}
   - component: {fileID: 1403194004}
   m_Layer: 5
-  m_Name: IMG/HealthBar
+  m_Name: IMG-HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2507,8 +2505,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 264.9, y: 747.12}
-  m_SizeDelta: {x: 96, y: 100}
+  m_AnchoredPosition: {x: 260.65, y: 742.69}
+  m_SizeDelta: {x: 88.59, y: 92.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1403194004
 MonoBehaviour:
@@ -2531,13 +2529,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: cde0adbd34547457483c188e1b62e00f, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillClockwise: 0
+  m_FillOrigin: 1
   m_UseSpriteMesh: 0
 --- !u!222 &1403194005
 CanvasRenderer:
@@ -2559,7 +2557,7 @@ GameObject:
   - component: {fileID: 1421854760}
   - component: {fileID: 1421854759}
   m_Layer: 5
-  m_Name: BTN/Bottombar
+  m_Name: BTN-Bottombar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2716,7 +2714,7 @@ GameObject:
   - component: {fileID: 1498396836}
   - component: {fileID: 1498396835}
   m_Layer: 5
-  m_Name: IMG/StatusBar
+  m_Name: IMG-StatusBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2950,7 +2948,7 @@ GameObject:
   - component: {fileID: 1717007550}
   - component: {fileID: 1717007552}
   m_Layer: 5
-  m_Name: MenuBtn
+  m_Name: btn-Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3069,7 +3067,7 @@ GameObject:
   - component: {fileID: 1763701082}
   - component: {fileID: 1763701081}
   m_Layer: 5
-  m_Name: TXT/name
+  m_Name: TXT-Dummyname
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3228,7 +3226,7 @@ GameObject:
   - component: {fileID: 1857321886}
   - component: {fileID: 1857321885}
   m_Layer: 5
-  m_Name: Troopicon
+  m_Name: img-Troop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3247,7 +3245,7 @@ RectTransform:
   m_Children:
   - {fileID: 531872194}
   m_Father: {fileID: 688803445}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -3314,21 +3312,21 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1907967857}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.99764705, y: 0.99764705, z: 0.99764705}
   m_Children:
   - {fileID: 272070893}
   - {fileID: 1149933200}
   - {fileID: 1403194003}
   - {fileID: 1498396834}
   - {fileID: 1052726394}
-  m_Father: {fileID: 405890500}
-  m_RootOrder: 2
+  m_Father: {fileID: 1943069912}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.4838442, y: -785.25793}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1912448713
@@ -3343,7 +3341,7 @@ GameObject:
   - component: {fileID: 1912448716}
   - component: {fileID: 1912448715}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: CompletePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3419,7 +3417,7 @@ GameObject:
   - component: {fileID: 1943069914}
   - component: {fileID: 1943069913}
   m_Layer: 5
-  m_Name: IMG/TopBar
+  m_Name: TopBarHolderPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3435,8 +3433,10 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0023586, y: 1.0023586, z: 1.0023586}
-  m_Children: []
-  m_Father: {fileID: 688803445}
+  m_Children:
+  - {fileID: 688803445}
+  - {fileID: 1907967858}
+  m_Father: {fileID: 405890500}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}

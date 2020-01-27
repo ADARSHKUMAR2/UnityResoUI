@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{7E58BC3F-7380-92D8-784D-DC3AA635BEFE}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/OpenMenus.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Swipe.cs">
     <Files>
       <File FileName="Assets/Scripts/Swipe.cs" Line="26" Column="9" />
       <File FileName="Assets/Scripts/OpenMenus.cs" Line="28" Column="10" />
@@ -10,7 +10,7 @@
           <Node name="UnityResoUI-master" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="OpenMenus.cs" selected="True" />
+                <Node name="Swipe.cs" selected="True" />
               </Node>
             </Node>
           </Node>
