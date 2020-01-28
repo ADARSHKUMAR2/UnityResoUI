@@ -68,6 +68,9 @@
     <Compile Include="Assets\Lib\Image\RotatingBackground.cs" />
     <Compile Include="Assets\Lib\Tween\PlaneTweener.cs" />
     <Compile Include="Assets\Lib\Tween\TweenMe.cs" />
+    <Compile Include="Assets\Scripts\Contacts.cs" />
+    <Compile Include="Assets\Scripts\ContactsData.cs" />
+    <Compile Include="Assets\Scripts\ContactsList.cs" />
     <Compile Include="Assets\Scripts\OpenMenus.cs" />
     <Compile Include="Assets\Scripts\Selector.cs" />
     <Compile Include="Assets\Scripts\Swipe.cs" />
@@ -106,6 +109,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\save.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\LeanTween\ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />

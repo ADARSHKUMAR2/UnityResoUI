@@ -1,16 +1,19 @@
 ﻿<Properties StartupConfiguration="{7E58BC3F-7380-92D8-784D-DC3AA635BEFE}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Swipe.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Contacts.cs">
     <Files>
-      <File FileName="Assets/Scripts/Swipe.cs" Line="26" Column="9" />
-      <File FileName="Assets/Scripts/OpenMenus.cs" Line="28" Column="10" />
+      <File FileName="Assets/Scripts/OpenMenus.cs" Line="48" Column="71" />
+      <File FileName="Assets/Scripts/ContactsList.cs" Line="8" Column="1" />
+      <File FileName="Assets/Scripts/Contacts.cs" Line="5" Column="1" />
+      <File FileName="Assets/Scripts/ContactsData.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="UnityResoUI-master" expanded="True">
             <Node name="Assets" expanded="True">
+              <Node name="Scenes" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="Swipe.cs" selected="True" />
+                <Node name="Contacts.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -20,7 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="125777f0-1693-4690-bb33-d54cddf7d2ab" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="57be7236-63ac-413c-a3da-dfd80166e575" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
