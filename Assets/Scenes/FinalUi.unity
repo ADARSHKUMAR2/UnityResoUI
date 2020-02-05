@@ -4296,9 +4296,6 @@ MonoBehaviour:
   - {fileID: 1369125093}
   - {fileID: 1806043491}
   - {fileID: 1553523812}
-  contacts:
-    name: 
-    number: 
 --- !u!1 &1514968572
 GameObject:
   m_ObjectHideFlags: 0

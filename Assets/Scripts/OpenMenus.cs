@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using Newtonsoft.Json;
 
 public class OpenMenus : MonoBehaviour
 {
+
     public List<Canvas> listOfCanvas;
-    public Contacts contacts;
+    private ContactsData contactsData;
+    public ContactsData contacts;
     //public ContactsList ContactsList = new ContactsList();
     private string file = "ContactsFile.txt";
 
@@ -19,27 +22,41 @@ public class OpenMenus : MonoBehaviour
 
     public void SaveContact()
     {
+        contacts = new ContactsData();
         string json = JsonUtility.ToJson(contacts);
         WriteToFile(file, json);
+
+        Debug.Log("Details Saved");
+
+        //{
+        //    name = name
+        //};
+        //File.WriteAllText(Application.persistentDataPath, json);
+        //CRoot root = JsonUtility.ToJson<CRoot>(json);
+
     }
 
     public void LoadContacts()
     {
-        contacts = new Contacts();
-       
-        
+        contacts = new ContactsData();
         string json = ReadFromFile(file);
+        JsonUtility.FromJson<ContactsList>(json);
+
+
         //TextAsset asset = Resources.Load("Contacts") as TextAsset;
         //JsonUtility.FromJsonOverwrite(json, contacts);
 
         //var data = PlayerPrefs.GetString("GameData");
-        JsonUtility.FromJson<ContactsList>(json);
+
+        //CRoot root = JsonUtility.FromJson<CRoot>(json);
+
         //contacts = JsonUtility.FromJson<Contacts>(json);
 
         //TextAsset asset = (TextAsset)Resources.Load(json, typeof(TextAsset));
         //json = asset.text;
 
     }
+
     /*
     public static T LoadContacts<T>(string filename) whe
     {
@@ -58,12 +75,14 @@ public class OpenMenus : MonoBehaviour
         //sw.Close();
         //File.AppendAllText(path,json1);
 
+        
         //if(!File.Exists(path)
-        FileStream fileStream = new FileStream(path, FileMode.Create);
+        FileStream fileStream = new FileStream(path, FileMode.Append);
         //using (StreamWriter writer = File.AppendText(path))
         using (StreamWriter writer = new StreamWriter(fileStream))
         {
             writer.WriteLine(json);
+            Debug.Log("File Created");
         }
     }
 

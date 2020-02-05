@@ -9,27 +9,29 @@ public class ContactsData : MonoBehaviour
     public OpenMenus openMenus;
     public Text ContactPersonName;
     // Start is called before the first frame update
+    
     void Start()
     {
-        openMenus.LoadContacts();
+        openMenus.LoadContacts();   
         contactName.text = openMenus.contacts.name;
         ContactPersonName.text = openMenus.contacts.name.ToString();
     }
-
+    
     public void ClickToEnter()
     {
-        ContactPersonName.text = openMenus.contacts.name.ToString();
+        ContactPersonName.text = openMenus.name.ToString();
     }
 
     public void ChangeName(string text)
     {
-        openMenus.contacts.name = text ;
+        openMenus.name = text ;
     }
-
+    
     public void ClickToSave()
     {
         //ContactPersonName.text = openMenus.contacts.number.ToString();
         openMenus.SaveContact();
      
     }
+    
 }
