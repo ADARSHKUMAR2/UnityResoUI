@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{7E58BC3F-7380-92D8-784D-DC3AA635BEFE}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Contacts.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/OpenMenus.cs">
     <Files>
-      <File FileName="Assets/Scripts/OpenMenus.cs" Line="73" Column="52" />
-      <File FileName="Assets/Scripts/ContactsData.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ContactsList.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Contacts.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/OpenMenus.cs" Line="62" Column="11" />
+      <File FileName="Assets/Scripts/ContactsData.cs" />
+      <File FileName="Assets/Scripts/ContactsList.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +12,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Scenes" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="Contacts.cs" selected="True" />
+                <Node name="OpenMenus.cs" selected="True" />
               </Node>
             </Node>
           </Node>

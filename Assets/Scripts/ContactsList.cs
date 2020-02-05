@@ -3,7 +3,7 @@
 [System.Serializable]
 public class ContactsList
 {
-    public List<Contacts> Contacts = new List<Contacts>();
+    public List<ContactsData> Contacts = new List<ContactsData>();
     //Contacts data = new Contacts();
     //data.name
 }

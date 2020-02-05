@@ -1,37 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ContactsData : MonoBehaviour
+[System.Serializable]
+public class ContactsData 
 {
-    public InputField contactName;
-    public OpenMenus openMenus;
-    public Text ContactPersonName;
-    // Start is called before the first frame update
-    
-    void Start()
-    {
-        openMenus.LoadContacts();   
-        contactName.text = openMenus.contacts.name;
-        ContactPersonName.text = openMenus.contacts.name.ToString();
-    }
-    
-    public void ClickToEnter()
-    {
-        ContactPersonName.text = openMenus.name.ToString();
-    }
+    private UIScript uiScript;
+    public string name;
 
-    public void ChangeName(string text)
-    {
-        openMenus.name = text ;
-    }
-    
-    public void ClickToSave()
-    {
-        //ContactPersonName.text = openMenus.contacts.number.ToString();
-        openMenus.SaveContact();
-     
-    }
-    
+    //public ContactsData(string name)
+   // {
+     //   this.name = name;
+        //uiScript.contactName.name = this.name;
+    //}
+    //public string number = "";
 }
+
+
+
+/*
+[System.Serializable]
+public class Contacts
+{
+    //public Contacts[] listOfContacts;
+    public List<Contact> contacts;
+}
+*/

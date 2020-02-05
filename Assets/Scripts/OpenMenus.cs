@@ -9,10 +9,10 @@ public class OpenMenus : MonoBehaviour
 {
 
     public List<Canvas> listOfCanvas;
-    private ContactsData contactsData;
     public ContactsData contacts;
     //public ContactsList ContactsList = new ContactsList();
     private string file = "ContactsFile.txt";
+    public string value;
 
     private void Start()
     {
@@ -22,12 +22,25 @@ public class OpenMenus : MonoBehaviour
 
     public void SaveContact()
     {
-        contacts = new ContactsData();
-        string json = JsonUtility.ToJson(contacts);
-        WriteToFile(file, json);
+        var setting = new JsonSerializerSettings();
+        setting.Formatting = Formatting.Indented;
+        setting.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
 
-        Debug.Log("Details Saved");
+        //var contacts = new ContactsData();
+        //var contacts = new List<ContactsData>();
+        //string json = JsonUtility.ToJson(contacts);
 
+        ContactsList contactsList = new ContactsList();
+        //contactsList.Contacts.Add(new ContactsData("my name"));
+        //contactsList.Contacts.Add(new ContactsData("my name 2"));
+        //contactsList.Contacts.Add(new ContactsData("my name 3"));
+        //contactsList.Contacts.Add(new ContactsData(name));
+
+        string serializedContacts = JsonConvert.SerializeObject(contactsList);
+        Debug.Log(serializedContacts);
+        
+        WriteToFile(file, serializedContacts);
+        value = serializedContacts;
         //{
         //    name = name
         //};
@@ -38,9 +51,20 @@ public class OpenMenus : MonoBehaviour
 
     public void LoadContacts()
     {
+        //string json = ReadFromFile(file);
+        //TextAsset asset = (TextAsset)Resources.Load(json, typeof(TextAsset));
+        //JsonUtility.FromJson<ContactsList>(asset.text);
         contacts = new ContactsData();
         string json = ReadFromFile(file);
-        JsonUtility.FromJson<ContactsList>(json);
+        JsonUtility.FromJsonOverwrite(json,contacts);
+        //JsonUtility.FromJsonOverwrite(json, contacts);
+
+        //var deserializedContacts = JsonConvert.DeserializeObject(value);
+        //Debug.Log(deserializedContacts);
+
+        //TextAsset asset = (TextAsset)Resources.Load(json, typeof(TextAsset));
+        //
+        //ContactsList = JsonUtility.FromJson<ContactsList>(json);
 
 
         //TextAsset asset = Resources.Load("Contacts") as TextAsset;
